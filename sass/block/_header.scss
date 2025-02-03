@@ -28,10 +28,14 @@ header {
    .link-github {
       color: $color-secondary;
       padding: 3rem;
-      background-image: url(../../images/ink-sketches-07.svg);
+      background-image: url(../../images/ink-sketches-08.svg);
       background-size: cover;
       background-position: center;
       z-index: -1;
+   }
+
+   .link-github svg path {
+      fill: $color-secondary;
    }
 }
 

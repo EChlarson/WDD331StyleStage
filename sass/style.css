@@ -69,10 +69,13 @@ header a {
 header .link-github {
   color: #ffffff;
   padding: 3rem;
-  background-image: url(../../images/ink-sketches-07.svg);
+  background-image: url(../../images/ink-sketches-08.svg);
   background-size: cover;
   background-position: center;
   z-index: -1;
+}
+header .link-github svg path {
+  fill: #ffffff;
 }
 
 .skip-link {
