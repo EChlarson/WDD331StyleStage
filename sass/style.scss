@@ -5,10 +5,12 @@
 // For example:
 // $color-primary: #3a0;
 @import "global/theme";
-@import "global/reset";
-@import "composition/logomark";
 @import "global/layout";
 @import "block/header";
+
+//Empty Still
+@import "global/reset";
+@import "composition/logomark";
 @import "block/nav";
 @import "block/about";
 @import "block/guidelines";

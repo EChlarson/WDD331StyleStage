@@ -3,43 +3,79 @@ h1 {
   font-family: "Yeon Sung", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 200px;
+  font-size: 180px;
+  margin: 1rem;
 }
 
 h2 {
   font-family: "Yeon Sung", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 70px;
+  font-size: 60px;
+  margin: 1rem;
 }
 
 h3, h4 {
   font-family: "Yeon Sung", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 50px;
+  font-size: 45px;
+  margin: 1rem;
 }
 
-p, li {
+p, li, a {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 45px;
+  font-size: 35px;
   text-decoration: none;
   list-style: none;
+  margin: 1rem;
 }
 
 blockquote p {
   font-family: "Yeon Sung", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 45px;
+  font-size: 35px;
+  margin: 1rem;
 }
 
-a {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 30px;
-  text-decoration: none;
+header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  color: #110F1A;
+  position: relative;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  width: 60rem;
+  height: 50rem;
+  background-image: url("../images/ink-sketches-02.svg");
+  background-size: cover;
+  background-position: right;
+  z-index: -1;
+}
+header svg {
+  width: 2rem;
+  margin-top: 3rem;
+}
+header a {
+  color: #110F1A;
+}
+header .link-github {
+  color: #ffffff;
+  padding: 3rem;
+  background-image: url(../../images/ink-sketches-07.svg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.skip-link {
+  margin: 1rem 1rem;
+  color: #110F1A;
 }/*# sourceMappingURL=style.css.map */

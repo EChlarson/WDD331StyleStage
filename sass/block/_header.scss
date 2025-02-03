@@ -1,0 +1,41 @@
+header {
+   @include two-grid-left;
+   color: $color-primary;
+   position: relative;
+
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -2rem;
+      width: 60rem;
+      height: 50rem;
+      background-image: url("../images/ink-sketches-02.svg");
+      background-size: cover;
+      background-position: right;
+      z-index: -1;
+   }
+
+   svg {
+      width: 2rem;
+      margin-top: 3rem;
+   }
+
+   a {
+      color: $color-primary;
+   }
+
+   .link-github {
+      color: $color-secondary;
+      padding: 3rem;
+      background-image: url(../../images/ink-sketches-07.svg);
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+   }
+}
+
+.skip-link {
+   margin: 1rem 1rem;
+   color: $color-primary;
+}
