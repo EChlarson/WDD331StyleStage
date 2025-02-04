@@ -98,4 +98,46 @@ nav ul {
 }
 nav a {
   color: #ffffff;
+}
+
+#about > :first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas: ". h2 h2" ". p p" ". p2 p2" "blockquote blockquote blockquote" "p3 p3 .";
+}
+#about h2 {
+  grid-area: h2;
+}
+#about .container {
+  margin-top: 6rem;
+}
+#about a {
+  color: #110F1A;
+}
+#about blockquote {
+  color: #89192F;
+  margin: 6rem 4rem;
+  grid-area: blockquote;
+}
+#about blockquote a {
+  font-family: "Yeon Sung", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: #89192F;
+  border-bottom: solid 4px #89192F;
+}
+#about ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10rem 20rem;
+  color: #ffffff;
+  background-image: url(../../images/ink-sketches-10.svg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

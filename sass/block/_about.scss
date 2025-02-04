@@ -1,0 +1,53 @@
+#about {
+
+   & > :first-child {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: auto auto auto auto auto; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        ". h2 h2"
+        ". p p"
+        ". p2 p2"
+        "blockquote blockquote blockquote"
+        "p3 p3 ."; 
+   }
+
+   h2 {
+      grid-area:h2
+   }
+
+   .container {
+      margin-top: 6rem;
+   }
+
+   a {
+      color: $color-primary;
+   }
+
+   blockquote {
+      color: $color-primary-alt;
+      margin: 6rem 4rem;
+      grid-area: blockquote;
+
+      & a {
+         @include heading-font(35px);
+         color: $color-primary-alt;
+         border-bottom: solid 4px $color-primary-alt;
+      }
+   }
+
+   ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 10rem 20rem;
+      color: $color-secondary;
+
+      background-image: url(../../images/ink-sketches-10.svg);
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+   }
+}
