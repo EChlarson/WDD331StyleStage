@@ -1,0 +1,21 @@
+nav {
+   margin: 8rem 0 3rem 0;
+   padding: 8rem 8rem;
+
+   background-image: url(../../images/ink-sketches-09.svg);
+   background-size: cover;
+   background-position: center;
+   z-index: -1;
+
+   & ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   }
+
+   a {
+      color: $color-secondary;
+   }
+}
+
+//ADD ANIMATION AND HOVER EFFECTS!

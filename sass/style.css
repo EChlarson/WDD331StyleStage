@@ -81,4 +81,21 @@ header .link-github svg path {
 .skip-link {
   margin: 1rem 1rem;
   color: #110F1A;
+}
+
+nav {
+  margin: 8rem 0 3rem 0;
+  padding: 8rem 8rem;
+  background-image: url(../../images/ink-sketches-09.svg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
