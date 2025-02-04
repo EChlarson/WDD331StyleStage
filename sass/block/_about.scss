@@ -41,7 +41,7 @@
 
    blockquote {
       color: $color-primary-alt;
-      margin: 6rem 4rem;
+      margin: 16rem 4rem 6rem 4rem;
       grid-area: blockquote;
 
       & a {
@@ -51,6 +51,7 @@
       }
    }
 
+   //Style Second Container
    ul {
       display: flex;
       flex-wrap: wrap;
@@ -68,5 +69,34 @@
    & a {
       @include paragraph-font(35px);
       border-bottom: solid 4px $color-primary-alt;
+   }
+
+   //Background Images
+   position: relative;
+
+   & h2::before {
+      content: "";
+      position: absolute;
+      top: 7rem;
+      left: 0;
+      width: 50rem;
+      height: 40rem;
+      background-image: url("../images/ink-sketches-01.svg");
+      background-size: cover;
+      background-position: left;
+      z-index: -1;
+   }
+
+   & p:last-child::after {
+      content: "";
+      position: absolute;
+      top: 53rem;
+      right: -3rem;
+      width: 50rem;
+      height: 40rem;
+      background-image: url("../images/ink-sketches-03.svg");
+      background-size: cover;
+      background-position: right;
+      z-index: -1;
    }
 }
