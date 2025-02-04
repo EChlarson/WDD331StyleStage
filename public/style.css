@@ -110,6 +110,12 @@ nav a {
 #about h2 {
   grid-area: h2;
 }
+#about .container p:nth-child(1) {
+  grid-area: p;
+}
+#about .container p:nth-child(2) {
+  grid-area: p2;
+}
 #about .container {
   margin-top: 6rem;
 }
@@ -128,6 +134,9 @@ nav a {
   font-size: 35px;
   color: #89192F;
   border-bottom: solid 4px #89192F;
+}
+#about .container p:nth-child(3) {
+  grid-area: p3;
 }
 #about ul {
   display: flex;
