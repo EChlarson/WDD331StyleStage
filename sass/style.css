@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Yeon+Sung&display=swap");
+h1 {
+  font-family: "Yeon Sung", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 180px;
+  margin: 1rem;
+}
+
+h2 {
+  font-family: "Yeon Sung", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  margin: 1rem;
+}
+
+h3, h4 {
+  font-family: "Yeon Sung", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  margin: 1rem;
+}
+
+p, li, a {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 35px;
+  text-decoration: none;
+  list-style: none;
+  margin: 1rem;
+}
+
+blockquote p {
+  font-family: "Yeon Sung", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  margin: 1rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  color: #110F1A;
+  position: relative;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  width: 60rem;
+  height: 50rem;
+  background-image: url("../images/ink-sketches-02.svg");
+  background-size: cover;
+  background-position: right;
+  z-index: -1;
+}
+header svg {
+  width: 2rem;
+  margin-top: 3rem;
+}
+header a {
+  color: #110F1A;
+}
+header .link-github {
+  color: #ffffff;
+  padding: 3rem;
+  background-image: url(../../images/ink-sketches-08.svg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+header .link-github svg path {
+  fill: #ffffff;
+}
+
+.skip-link {
+  margin: 1rem 1rem;
+  color: #110F1A;
+}
+
+nav {
+  margin: 8rem 0 3rem 0;
+  padding: 8rem 8rem;
+  background-image: url(../../images/ink-sketches-09.svg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: #ffffff;
+}
+
+#about > :first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas: ". h2 h2" ". p p" ". p2 p2" "blockquote blockquote blockquote" "p3 p3 .";
+}
+#about h2 {
+  grid-area: h2;
+}
+#about .container p:nth-child(1) {
+  grid-area: p;
+}
+#about .container p:nth-child(2) {
+  grid-area: p2;
+}
+#about .container {
+  margin-top: 6rem;
+}
+#about a {
+  color: #110F1A;
+}
+#about blockquote {
+  color: #89192F;
+  margin: 6rem 4rem;
+  grid-area: blockquote;
+}
+#about blockquote a {
+  font-family: "Yeon Sung", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: #89192F;
+  border-bottom: solid 4px #89192F;
+}
+#about .container p:nth-child(3) {
+  grid-area: p3;
+}
+#about ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10rem 20rem;
+  color: #ffffff;
+  background-image: url(../../images/ink-sketches-10.svg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}/*# sourceMappingURL=style.css.map */

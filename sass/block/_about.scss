@@ -17,6 +17,14 @@
       grid-area:h2
    }
 
+   .container p:nth-child(1) {
+      grid-area: p;
+   }
+
+   .container p:nth-child(2) {
+      grid-area: p2;
+   }
+
    .container {
       margin-top: 6rem;
    }
@@ -35,6 +43,10 @@
          color: $color-primary-alt;
          border-bottom: solid 4px $color-primary-alt;
       }
+   }
+
+   .container p:nth-child(3) {
+      grid-area: p3;
    }
 
    ul {
