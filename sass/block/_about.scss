@@ -1,5 +1,6 @@
 #about {
 
+   //Grid
    & > :first-child {
       display: grid; 
       grid-template-columns: 1fr 1fr 1fr; 
@@ -7,28 +8,33 @@
       gap: 0px 0px; 
       grid-template-areas: 
         ". h2 h2"
-        ". p p"
+        ". p1 p1"
         ". p2 p2"
         "blockquote blockquote blockquote"
         "p3 p3 ."; 
    }
 
    h2 {
-      grid-area:h2
-   }
-
-   .container p:nth-child(1) {
-      grid-area: p;
+      grid-area:h2;
    }
 
    .container p:nth-child(2) {
+      grid-area: p1;
+   }
+
+   .container p:nth-child(3) {
       grid-area: p2;
+   }
+
+   .container p:last-child {
+      grid-area: p3;
    }
 
    .container {
       margin-top: 6rem;
    }
 
+   //Style First Container
    a {
       color: $color-primary;
    }
@@ -45,10 +51,6 @@
       }
    }
 
-   .container p:nth-child(3) {
-      grid-area: p3;
-   }
-
    ul {
       display: flex;
       flex-wrap: wrap;
@@ -61,5 +63,10 @@
       background-size: cover;
       background-position: center;
       z-index: -1;
+   }
+
+   & a {
+      @include paragraph-font(35px);
+      border-bottom: solid 4px $color-primary-alt;
    }
 }
