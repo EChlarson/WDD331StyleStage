@@ -294,4 +294,43 @@ nav a {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
+.profile {
+  position: relative;
+  margin-top: 6rem;
+}
+.profile ul {
+  list-style: none;
+  padding: 0;
+}
+.profile a {
+  text-decoration: none;
+  color: #110F1A;
+  border-bottom: solid 4px #89192F;
+}
+.profile .container > a {
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  padding: 3rem;
+  background-image: url(../../images/ink-sketches-08.svg);
+  display: block;
+  background-size: cover;
+  background-position: center;
+  width: 25rem;
+  height: 6rem;
+  z-index: -1;
+}
+.profile::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  right: 10rem;
+  width: 60rem;
+  height: 50rem;
+  background-image: url("../images/ink-sketches-05.svg");
+  background-size: cover;
+  background-position: right;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=style.css.map */
