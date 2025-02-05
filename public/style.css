@@ -257,5 +257,41 @@ nav a {
   background-position: left;
   z-index: -1;
 }
+#contribute footer {
+  margin-top: 6rem;
+}
+#contribute footer .container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas: "h3 h3 h3" "a1 a2 a3";
+}
+#contribute footer h3 {
+  grid-area: h3;
+}
+#contribute footer .container a:nth-child(2) {
+  grid-area: a1;
+}
+#contribute footer .container a:nth-child(3) {
+  grid-area: a2;
+}
+#contribute footer .container a:nth-child(4) {
+  grid-area: a3;
+}
+#contribute footer .container a {
+  border: none;
+  color: #ffffff;
+  padding: 4rem;
+  background-image: url(../../images/ink-sketches-10.svg);
+  background-size: 200% 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin-top: 2rem;
+  z-index: -1;
+  border-radius: 2rem;
+}
 
 /*# sourceMappingURL=style.css.map */
