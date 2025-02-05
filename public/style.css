@@ -185,4 +185,32 @@ nav a {
   z-index: -1;
 }
 
+#guidelines .container {
+  margin-top: 6rem;
+}
+#guidelines a {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 35px;
+  border-bottom: solid 4px #89192F;
+  color: #110F1A;
+}
+#guidelines h3 {
+  margin-top: 4rem;
+}
+#guidelines .link-guidelines {
+  border: none;
+  color: #ffffff;
+  padding: 5rem;
+  background-image: url(../../images/ink-sketches-07.svg);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin-top: 2rem;
+  width: 25rem;
+  height: 6rem;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=style.css.map */
