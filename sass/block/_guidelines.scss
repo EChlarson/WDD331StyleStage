@@ -8,6 +8,7 @@
       @include paragraph-font(35px);
       border-bottom: solid 4px $color-primary-alt;
       color: $color-primary;
+      text-decoration: none;
    }
 
    h3 {

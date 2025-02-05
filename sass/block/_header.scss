@@ -23,6 +23,7 @@ header {
 
    a {
       color: $color-primary;
+      text-decoration: none;
    }
 
    .link-github {
@@ -42,6 +43,7 @@ header {
 .skip-link {
    margin: 1rem 1rem;
    color: $color-primary;
+   text-decoration: none;
 }
 
 //MOVE .SKIP-LINK DOWN A BIT

@@ -37,6 +37,7 @@
    //Style First Container
    a {
       color: $color-primary;
+      text-decoration: none;
    }
 
    blockquote {
@@ -59,6 +60,7 @@
       align-items: center;
       padding: 10rem 20rem;
       color: $color-secondary;
+      list-style: none;
 
       background-image: url(../../images/ink-sketches-10.svg);
       background-size: cover;

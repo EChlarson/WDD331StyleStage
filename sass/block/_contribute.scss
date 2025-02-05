@@ -1,0 +1,50 @@
+#contribute {
+
+   a {
+      text-decoration: none;
+      color: $color-primary;
+      border-bottom: solid 4px $color-primary-alt;
+   }
+
+   //Grid for first container
+   & > :first-child {
+      display: grid; 
+      grid-template-columns: 1fr 2fr; 
+      grid-template-rows: auto auto auto; 
+      gap: 0px 0px; 
+   }
+
+   h2 {
+      grid-area: 1/2/2/3;
+   }
+
+   .container p:nth-child(2) {
+      grid-area: 2/2/3/3;
+   }
+
+   .container p:nth-child(3) {
+      grid-area: 3/2/4/3;
+   }
+
+   //Second Container
+   ol {
+      list-style: decimal;
+      list-style-type: decimal;
+   }
+
+   //Background Images
+   position: relative;
+
+   & h2::before {
+      content: "";
+      position: absolute;
+      top: -3rem;
+      left: 8rem;
+      width: 30rem;
+      height: 30rem;
+      background-image: url("../images/ink-sketches-03.svg");
+      background-size: cover;
+      background-position: left;
+      z-index: -1;
+      }
+}
