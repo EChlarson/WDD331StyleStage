@@ -1,0 +1,31 @@
+#guidelines {
+   
+   .container {
+      margin-top: 6rem;
+   }
+
+   & a {
+      @include paragraph-font(35px);
+      border-bottom: solid 4px $color-primary-alt;
+      color: $color-primary;
+   }
+
+   h3 {
+      margin-top: 4rem;
+   }
+
+   .link-guidelines {
+      border: none;
+      color: $color-secondary;
+      padding: 5rem;
+      background-image: url(../../images/ink-sketches-07.svg);
+      background-size: cover;
+      background-position: center;
+      display: block;
+      margin-top: 2rem;
+      width: 25rem;
+      height: 6rem;
+      z-index: -1;
+   }
+
+}
