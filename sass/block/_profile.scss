@@ -1,0 +1,43 @@
+.profile {
+   position: relative;
+   margin-top: 6rem;
+
+   ul {
+      list-style: none;
+      padding: 0;
+   }
+
+   a {
+      text-decoration: none;
+      color: $color-primary;
+      border-bottom: solid 4px $color-primary-alt;
+   }
+
+   .container > a {
+      text-align: center;
+      border: none;
+      color: $color-secondary;
+      padding: 3rem;
+      background-image: url(../../images/ink-sketches-08.svg);
+      display: block;
+      background-size: cover;
+      background-position: center;
+      width: 25rem;
+      height: 6rem;
+      z-index: -1;
+   }//CENTER BUTTON TEXT BETTER
+
+   //background image 
+   &::after {
+      content: "";
+      position: absolute;
+      top: -10rem;
+      right: 10rem;
+      width: 60rem;
+      height: 50rem;
+      background-image: url("../images/ink-sketches-05.svg");
+      background-size: cover;
+      background-position: right;
+      z-index: -1;
+   }
+}
