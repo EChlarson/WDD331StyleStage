@@ -8,3 +8,7 @@ $brand-colors: (
   primary-alt: $color-primary-alt,
   secondary: $color-secondary,
 );
+
+* {
+  cursor: url("../../images/ink-cursor-11.svg"), auto;
+}
