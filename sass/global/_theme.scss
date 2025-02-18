@@ -12,3 +12,17 @@ $brand-colors: (
 * {
   cursor: url("../../images/ink-cursor-11.svg"), auto;
 }
+
+a,
+.page-footer ul li a {
+  cursor: url("../../images/ink-cursor-12.svg"), auto;
+}
+
+.link-github,
+nav li a,
+.link-guidelines,
+.profile a:last-of-type,
+.link-allstyles,
+.page-footer p a {
+  cursor: url("../../images/ink-cursor-13.svg"), auto;
+}
