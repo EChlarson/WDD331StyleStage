@@ -172,6 +172,20 @@ header div p::after {
   animation-delay: 2.5s;
 }
 
+/*.link-github:hover,
+.link-guidelines:hover::after,
+.profile a:last-of-type:hover::after,
+c::after {
+   transform: translate(-50%, -50%) scale(1.1);
+}*/
+.link-github:hover,
+.link-guidelines:hover,
+.profile a:last-of-type:hover,
+.link-allstyles:hover {
+  background-size: 105%;
+  padding: 7rem;
+}
+
 header {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -204,7 +218,9 @@ header .link-github {
   background-image: url(../../images/ink-sketches-08.svg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
+  transition: background-size 0.3s ease-in-out;
 }
 header .link-github svg path {
   fill: #ffffff;
@@ -222,7 +238,7 @@ nav {
   background-image: url(../../images/ink-sketches-09.svg);
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  z-index: 10000;
 }
 nav ul {
   display: flex;
@@ -344,11 +360,13 @@ nav a {
   background-image: url(../../images/ink-sketches-07.svg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: block;
   margin-top: 2rem;
   width: 25rem;
   height: 6rem;
   z-index: -1;
+  transition: background-size 0.3s ease-in-out;
 }
 
 #contribute {
@@ -487,9 +505,11 @@ nav a {
   display: block;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   width: 25rem;
   height: 6rem;
   z-index: -1;
+  transition: background-size 0.3s ease-in-out;
 }
 .profile::after {
   content: "";

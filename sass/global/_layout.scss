@@ -2,3 +2,18 @@
    display: grid;
    grid-template-columns: 2fr 1fr;
 }
+
+/*.link-github:hover,
+.link-guidelines:hover::after,
+.profile a:last-of-type:hover::after,
+c::after {
+   transform: translate(-50%, -50%) scale(1.1);
+}*/
+
+.link-github:hover,
+.link-guidelines:hover,
+.profile a:last-of-type:hover,
+.link-allstyles:hover {
+   background-size: 105%;
+   padding: 7rem;
+}
