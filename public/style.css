@@ -543,10 +543,16 @@ nav a {
 .page-footer ul li a {
   color: #110F1A;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.page-footer svg {
+.page-footer a.link-github svg {
   width: 2rem;
-  margin-top: 3rem;
+  height: 2rem;
+  margin: 0;
+  position: relative;
+  top: 2px; 
 }
 .page-footer p a {
   text-decoration: none;
