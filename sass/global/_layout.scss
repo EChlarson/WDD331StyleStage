@@ -2,3 +2,10 @@
    display: grid;
    grid-template-columns: 2fr 1fr;
 }
+
+.link-github:hover::after,
+.link-guidelines:hover::after,
+.profile a:last-of-type:hover::after,
+.link-allstyles:hover::after{
+   transform: translate(-50%, -50%) sale(1.1);
+}
