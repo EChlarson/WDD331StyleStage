@@ -101,4 +101,46 @@
       background-position: right;
       z-index: -1;
    }
-}
+
+   //small screen
+   * {
+      @include small-screen;
+      margin: 0px;
+   }
+   @media (max-width: 550px) {
+      & > :first-child {
+         display: block; 
+         grid-template-columns: 1fr;
+         grid-template-areas: none;
+      }
+
+      //position background images between text
+      & h2::before {
+         top: 28rem;
+      }
+
+      blockquote {
+         margin-top: 400px;
+      }
+
+      & p:last-child::after {
+         top: 91.5rem;
+      }
+
+      & p:nth-child(5) {
+         margin-top: -45px;
+         max-width: 48%;
+         justify-self: right;
+      }
+
+      ul {
+         padding: 4rem 4rem;
+         justify-self: center;
+         font-size: 250%;
+      }
+
+      .container:last-of-type {
+         margin-bottom: -525px;
+      }
+
+}}

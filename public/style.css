@@ -209,6 +209,32 @@ header .link-github {
 header .link-github svg path {
   fill: #ffffff;
 }
+@media (max-width: 550px) {
+  header {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: smaller;
+  }
+  header h1 {
+    font-size: 8rem;
+    margin-top: 6rem;
+    margin-bottom: 18rem;
+  }
+  header h2 {
+    font-size: 2.5rem;
+  }
+  header p, header a {
+    font-size: 1.5rem;
+  }
+  header::after {
+    content: "";
+    background-image: url("../images/ink-sketches-02.svg");
+    background-size: cover;
+    z-index: -1;
+  }
+}
 
 .skip-link {
   margin: 1rem 1rem;
@@ -233,6 +259,32 @@ nav ul {
 nav a {
   color: #ffffff;
   text-decoration: none;
+}
+@media (max-width: 550px) {
+  nav {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: smaller;
+  }
+  nav h1 {
+    font-size: 8rem;
+    margin-top: 6rem;
+    margin-bottom: 18rem;
+  }
+  nav h2 {
+    font-size: 2.5rem;
+  }
+  nav p, nav a {
+    font-size: 1.5rem;
+  }
+  nav::after {
+    content: "";
+    background-image: url("../images/ink-sketches-02.svg");
+    background-size: cover;
+    z-index: -1;
+  }
 }
 
 #about {
@@ -321,6 +373,64 @@ nav a {
   background-position: right;
   z-index: -1;
 }
+#about * {
+  margin: 0px;
+}
+@media (max-width: 550px) {
+  #about * {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: smaller;
+  }
+  #about * h1 {
+    font-size: 8rem;
+    margin-top: 6rem;
+    margin-bottom: 18rem;
+  }
+  #about * h2 {
+    font-size: 2.5rem;
+  }
+  #about * p, #about * a {
+    font-size: 1.5rem;
+  }
+  #about *::after {
+    content: "";
+    background-image: url("../images/ink-sketches-02.svg");
+    background-size: cover;
+    z-index: -1;
+  }
+}
+@media (max-width: 550px) {
+  #about > :first-child {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
+  }
+  #about h2::before {
+    top: 28rem;
+  }
+  #about blockquote {
+    margin-top: 400px;
+  }
+  #about p:last-child::after {
+    top: 91.5rem;
+  }
+  #about p:nth-child(5) {
+    margin-top: -45px;
+    max-width: 48%;
+    justify-self: right;
+  }
+  #about ul {
+    padding: 4rem 4rem;
+    justify-self: center;
+    font-size: 250%;
+  }
+  #about .container:last-of-type {
+    margin-bottom: -525px;
+  }
+}
 
 #guidelines .container {
   margin-top: 6rem;
@@ -349,6 +459,15 @@ nav a {
   width: 25rem;
   height: 6rem;
   z-index: -1;
+}
+@media (max-width: 550px) {
+  #guidelines * {
+    font-size: 125%;
+  }
+  #guidelines a {
+    font-size: 100%;
+    margin: auto -1px;
+  }
 }
 
 #contribute {

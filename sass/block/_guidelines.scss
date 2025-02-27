@@ -29,4 +29,15 @@
       z-index: -1;
    }
 
-}
+   @media (max-width: 550px) {
+      * {
+         font-size: 125%;
+      }
+
+      a {
+         font-size: 100%;
+         margin: auto -1px; //removed the extra gap between the p and a text
+      }
+   }
+
+} 
