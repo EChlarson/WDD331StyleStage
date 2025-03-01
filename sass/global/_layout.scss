@@ -40,3 +40,10 @@
       }
    }
 }
+
+@media (max-width: 550px) {
+   body {
+      margin-left: 0px;
+      max-width: 100%;
+   }
+}

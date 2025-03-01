@@ -172,6 +172,12 @@ header div p::after {
   animation-delay: 2.5s;
 }
 
+@media (max-width: 550px) {
+  body {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+}
 header {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -405,11 +411,13 @@ nav a {
 @media (max-width: 550px) {
   #about > :first-child {
     display: block;
-    grid-template-columns: 1fr;
-    grid-template-areas: none;
+  }
+  #about * {
+    display: block;
   }
   #about h2::before {
     top: 28rem;
+    max-width: 100%;
   }
   #about blockquote {
     margin-top: 400px;
