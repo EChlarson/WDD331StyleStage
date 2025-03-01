@@ -29,14 +29,25 @@
       z-index: -1;
    }
 
+   * {
+      @include small-screen;
+      
+   }
+
    @media (max-width: 550px) {
       * {
          font-size: 125%;
       }
 
+      margin-top: 670px;
+
       a {
          font-size: 100%;
          margin: auto -1px; //removed the extra gap between the p and a text
+      }
+
+      a:after {
+         max-width: 100%;
       }
    }
 

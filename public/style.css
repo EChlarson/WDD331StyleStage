@@ -175,6 +175,7 @@ header div p::after {
 @media (max-width: 550px) {
   body {
     margin-left: 0px;
+    margin-right: 0px;
     max-width: 100%;
   }
 }
@@ -217,11 +218,12 @@ header .link-github svg path {
 }
 @media (max-width: 550px) {
   header {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
     text-align: center;
     font-size: smaller;
+  }
+  header * {
+    max-width: 100%;
   }
   header h1 {
     font-size: 8rem;
@@ -268,11 +270,12 @@ nav a {
 }
 @media (max-width: 550px) {
   nav {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
     text-align: center;
     font-size: smaller;
+  }
+  nav * {
+    max-width: 100%;
   }
   nav h1 {
     font-size: 8rem;
@@ -379,16 +382,14 @@ nav a {
   background-position: right;
   z-index: -1;
 }
-#about * {
-  margin: 0px;
-}
 @media (max-width: 550px) {
   #about * {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
     text-align: center;
     font-size: smaller;
+  }
+  #about * * {
+    max-width: 100%;
   }
   #about * h1 {
     font-size: 8rem;
@@ -412,9 +413,6 @@ nav a {
   #about > :first-child {
     display: block;
   }
-  #about * {
-    display: block;
-  }
   #about h2::before {
     top: 28rem;
     max-width: 100%;
@@ -423,12 +421,18 @@ nav a {
     margin-top: 400px;
   }
   #about p:last-child::after {
-    top: 91.5rem;
+    top: 95rem;
   }
-  #about p:nth-child(5) {
+  #about .container:first-of-type p:nth-child(5) {
     margin-top: -45px;
-    max-width: 48%;
+    max-width: 45%;
     justify-self: right;
+  }
+  #about .container:last-of-type p:nth-of-type(3) {
+    margin-top: -45px;
+  }
+  #about .container:last-of-type p:last-of-type {
+    margin-top: 45px;
   }
   #about ul {
     padding: 4rem 4rem;
@@ -470,11 +474,44 @@ nav a {
 }
 @media (max-width: 550px) {
   #guidelines * {
+    display: block;
+    text-align: center;
+    font-size: smaller;
+  }
+  #guidelines * * {
+    max-width: 100%;
+  }
+  #guidelines * h1 {
+    font-size: 8rem;
+    margin-top: 6rem;
+    margin-bottom: 18rem;
+  }
+  #guidelines * h2 {
+    font-size: 2.5rem;
+  }
+  #guidelines * p, #guidelines * a {
+    font-size: 1.5rem;
+  }
+  #guidelines *::after {
+    content: "";
+    background-image: url("../images/ink-sketches-02.svg");
+    background-size: cover;
+    z-index: -1;
+  }
+}
+@media (max-width: 550px) {
+  #guidelines {
+    margin-top: 670px;
+  }
+  #guidelines * {
     font-size: 125%;
   }
   #guidelines a {
     font-size: 100%;
     margin: auto -1px;
+  }
+  #guidelines a:after {
+    max-width: 100%;
   }
 }
 
@@ -552,6 +589,72 @@ nav a {
   padding: 3rem 1rem;
   border-radius: 1rem;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 550px) {
+  #contribute {
+    display: block;
+    text-align: center;
+    font-size: smaller;
+  }
+  #contribute * {
+    max-width: 100%;
+  }
+  #contribute h1 {
+    font-size: 8rem;
+    margin-top: 6rem;
+    margin-bottom: 18rem;
+  }
+  #contribute h2 {
+    font-size: 2.5rem;
+  }
+  #contribute p, #contribute a {
+    font-size: 1.5rem;
+  }
+  #contribute::after {
+    content: "";
+    background-image: url("../images/ink-sketches-02.svg");
+    background-size: cover;
+    z-index: -1;
+  }
+}
+@media (max-width: 550px) {
+  #contribute > :first-child {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+  }
+  #contribute h2 {
+    grid-area: 1/1/1/1;
+  }
+  #contribute .container p:nth-child(2) {
+    grid-area: 2/1/3/1;
+  }
+  #contribute .container p:nth-child(3) {
+    grid-area: 3/1/4/1;
+  }
+  #contribute h2:before {
+    max-width: 100%;
+    margin-left: -15px;
+  }
+  #contribute a {
+    font-size: 100%;
+  }
+  #contribute footer {
+    padding: 1rem;
+  }
+  #contribute footer .container a {
+    padding: 2rem 0.2rem;
+    border-radius: 1rem;
+    font-size: 1.4em;
+    margin: 10px;
+  }
+}
+@media (max-width: 550px) and (max-width: 375px) {
+  #contribute footer .container a {
+    font-size: 1.3em;
+    margin: 8px;
+  }
 }
 
 #styles {

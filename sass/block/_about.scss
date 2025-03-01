@@ -105,14 +105,9 @@
    //small screen
    * {
       @include small-screen;
-      margin: 0px;
    }
    @media (max-width: 550px) { 
       & > :first-child {
-         display: block;
-      }
-
-      * {
          display: block;
       }
 
@@ -127,13 +122,23 @@
       }
 
       & p:last-child::after {
-         top: 91.5rem;
+         top: 95rem;
       }
 
-      & p:nth-child(5) {
+      //align p element to right of art piece
+      & .container:first-of-type p:nth-child(5) {
          margin-top: -45px;
-         max-width: 48%;
+         max-width: 45%;
          justify-self: right;
+      }
+
+      //correct margin of last two p elements
+      & .container:last-of-type p:nth-of-type(3) {
+         margin-top: -45px;
+      }
+
+      & .container:last-of-type p:last-of-type {
+         margin-top: 45px;
       }
 
       ul {
