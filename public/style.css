@@ -172,6 +172,16 @@ header div p::after {
   animation-delay: 2.5s;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #89192F;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #110F1A;
+}
+
 .link-github:hover::after,
 .link-guidelines:hover::after,
 .profile a:last-of-type:hover::after,

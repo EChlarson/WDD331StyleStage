@@ -122,3 +122,14 @@ header div h2::before { animation-duration: 6s; animation-delay: 1.5s; }
 header div h2::after { animation-duration: 8s; animation-delay: 2s; }
 header div p::before { animation-duration: 7.5s; animation-delay: 1.2s; }
 header div p::after { animation-duration: 9s; animation-delay: 2.5s; }
+
+//Scroll Bar
+::-webkit-scrollbar-thumb {
+  background: $color-primary-alt;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $color-primary;
+}
