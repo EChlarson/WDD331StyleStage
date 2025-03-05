@@ -694,6 +694,17 @@ nav a {
   height: 6rem;
   z-index: -1;
 }
+@media (max-width: 550px) {
+  #styles ul {
+    display: block;
+    padding-left: 0px;
+  }
+  #styles .container > a {
+    margin: 2px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+  }
+}
 
 .profile {
   position: relative;
@@ -733,6 +744,13 @@ nav a {
   background-position: right;
   z-index: -1;
 }
+@media (max-width: 550px) {
+  .profile .container > a {
+    margin: 2px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+  }
+}
 
 .page-footer {
   margin-top: 10rem;
@@ -769,6 +787,47 @@ nav a {
   text-decoration: none;
   color: #ffffff;
   border-bottom: solid 4px #89192F;
+}
+@media (max-width: 550px) {
+  .page-footer {
+    display: block;
+    text-align: center;
+    font-size: smaller;
+  }
+  .page-footer * {
+    max-width: 100%;
+  }
+  .page-footer h1 {
+    font-size: 8rem;
+    margin-top: 6rem;
+    margin-bottom: 18rem;
+  }
+  .page-footer h2 {
+    font-size: 2.5rem;
+  }
+  .page-footer p, .page-footer a {
+    font-size: 1.5rem;
+  }
+  .page-footer::after {
+    content: "";
+    background-image: url("../images/ink-sketches-02.svg");
+    background-size: cover;
+    z-index: -1;
+  }
+}
+@media (max-width: 5550px) {
+  .page-footer {
+    margin-top: 5rem;
+  }
+  .page-footer ul {
+    display: block;
+    padding-left: 0px;
+  }
+  .page-footer li {
+    height: 7rem;
+    line-height: 7rem;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
