@@ -295,6 +295,13 @@ nav a {
     z-index: -1;
   }
 }
+@media (max-width: 768px) {
+  nav ul {
+    padding-left: 0px;
+    display: block;
+    text-align: center;
+  }
+}
 
 #about {
   position: relative;
