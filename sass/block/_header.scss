@@ -40,7 +40,9 @@ header {
    .link-github svg path {
       fill: $color-secondary;
    }
-}
+
+   @include small-screen;
+}   
 
 .skip-link {
    margin: 1rem 1rem;

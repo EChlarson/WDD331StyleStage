@@ -43,4 +43,13 @@
       background-position: right;
       z-index: -1;
    }
+
+   @media (max-width: 550px) {
+      .container > a {
+         margin: 2px;
+         padding-bottom: 24px;
+         padding-left: 24px;
+      }
+
+   }
 }

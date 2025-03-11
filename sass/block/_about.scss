@@ -101,4 +101,54 @@
       background-position: right;
       z-index: -1;
    }
-}
+
+   //small screen
+   * {
+      @include small-screen;
+   }
+   @media (max-width: 550px) { 
+      & > :first-child {
+         display: block;
+      }
+
+      //position background images between text
+      & h2::before {
+         top: 28rem;
+         max-width: 100%;
+      }
+
+      blockquote {
+         margin-top: 400px;
+      }
+
+      & p:last-child::after {
+         top: 95rem;
+      }
+
+      //align p element to right of art piece
+      & .container:first-of-type p:nth-child(5) {
+         margin-top: -45px;
+         max-width: 45%;
+         justify-self: right;
+      }
+
+      //correct margin of last two p elements
+      & .container:last-of-type p:nth-of-type(3) {
+         margin-top: -45px;
+      }
+
+      & .container:last-of-type p:last-of-type {
+         margin-top: 45px;
+      }
+
+      ul {
+         padding: 4rem 4rem;
+         justify-self: center;
+         font-size: 250%;
+      }
+
+      .container:last-of-type {
+         margin-bottom: -525px;
+      }
+
+}}

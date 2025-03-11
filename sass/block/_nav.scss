@@ -18,6 +18,16 @@ nav {
       color: $color-secondary;
       text-decoration: none;
    }
+
+   @include small-screen;
+
+   @media (max-width: 768px) {
+      ul {
+         padding-left: 0px;
+         display: block;
+         text-align: center;
+      }
+   }
 }
 
 //ADD ANIMATION AND HOVER EFFECTS!
