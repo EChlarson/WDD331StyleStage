@@ -39,17 +39,4 @@
       height: 6rem;
       z-index: -1;
    }
-
-   @media (max-width: 550px) {
-      ul {
-         display: block;
-         padding-left: 0px;
-      }
-
-      .container > a {
-         margin: 2px;
-         padding-bottom: 24px;
-         padding-left: 24px;
-      }
-   }
 }

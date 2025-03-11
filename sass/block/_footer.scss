@@ -42,21 +42,4 @@
    background-position: center;
    z-index: -1;
 
-   @include small-screen;
-
-   @media (max-width: 5550px) {
-      margin-top: 5rem;
-
-      ul {
-         display: block;
-         padding-left: 0px;
-      }
-
-      li {
-         height: 7rem;
-         line-height: 7rem;
-         text-align: center;
-      }
-   }
-
 } //CAN WE GET THE TOP OF THE BACKGROUND TO SHOW?

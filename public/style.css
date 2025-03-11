@@ -172,15 +172,6 @@ header div p::after {
   animation-delay: 2.5s;
 }
 
-
-@media (max-width: 550px) {
-  body {
-    margin-left: 0px;
-    margin-right: 0px;
-    max-width: 100%;
-  }
-}
-
 ::-webkit-scrollbar-thumb {
   background: #89192F;
   border-radius: 10px;
@@ -197,7 +188,6 @@ header div p::after {
 .link-allstyles:hover::after {
   transform: translate(-50%, -50%) sale(1.1);
 }
-
 
 header {
   display: grid;
@@ -238,33 +228,6 @@ header .link-github {
 header .link-github svg path {
   fill: #ffffff;
 }
-@media (max-width: 550px) {
-  header {
-    display: block;
-    text-align: center;
-    font-size: smaller;
-  }
-  header * {
-    max-width: 100%;
-  }
-  header h1 {
-    font-size: 8rem;
-    margin-top: 6rem;
-    margin-bottom: 18rem;
-  }
-  header h2 {
-    font-size: 2.5rem;
-  }
-  header p, header a {
-    font-size: 1.5rem;
-  }
-  header::after {
-    content: "";
-    background-image: url("../images/ink-sketches-02.svg");
-    background-size: cover;
-    z-index: -1;
-  }
-}
 
 .skip-link {
   margin: 1rem 1rem;
@@ -289,40 +252,6 @@ nav ul {
 nav a {
   color: #ffffff;
   text-decoration: none;
-}
-@media (max-width: 550px) {
-  nav {
-    display: block;
-    text-align: center;
-    font-size: smaller;
-  }
-  nav * {
-    max-width: 100%;
-  }
-  nav h1 {
-    font-size: 8rem;
-    margin-top: 6rem;
-    margin-bottom: 18rem;
-  }
-  nav h2 {
-    font-size: 2.5rem;
-  }
-  nav p, nav a {
-    font-size: 1.5rem;
-  }
-  nav::after {
-    content: "";
-    background-image: url("../images/ink-sketches-02.svg");
-    background-size: cover;
-    z-index: -1;
-  }
-}
-@media (max-width: 768px) {
-  nav ul {
-    padding-left: 0px;
-    display: block;
-    text-align: center;
-  }
 }
 
 #about {
@@ -411,67 +340,6 @@ nav a {
   background-position: right;
   z-index: -1;
 }
-@media (max-width: 550px) {
-  #about * {
-    display: block;
-    text-align: center;
-    font-size: smaller;
-  }
-  #about * * {
-    max-width: 100%;
-  }
-  #about * h1 {
-    font-size: 8rem;
-    margin-top: 6rem;
-    margin-bottom: 18rem;
-  }
-  #about * h2 {
-    font-size: 2.5rem;
-  }
-  #about * p, #about * a {
-    font-size: 1.5rem;
-  }
-  #about *::after {
-    content: "";
-    background-image: url("../images/ink-sketches-02.svg");
-    background-size: cover;
-    z-index: -1;
-  }
-}
-@media (max-width: 550px) {
-  #about > :first-child {
-    display: block;
-  }
-  #about h2::before {
-    top: 28rem;
-    max-width: 100%;
-  }
-  #about blockquote {
-    margin-top: 400px;
-  }
-  #about p:last-child::after {
-    top: 95rem;
-  }
-  #about .container:first-of-type p:nth-child(5) {
-    margin-top: -45px;
-    max-width: 45%;
-    justify-self: right;
-  }
-  #about .container:last-of-type p:nth-of-type(3) {
-    margin-top: -45px;
-  }
-  #about .container:last-of-type p:last-of-type {
-    margin-top: 45px;
-  }
-  #about ul {
-    padding: 4rem 4rem;
-    justify-self: center;
-    font-size: 250%;
-  }
-  #about .container:last-of-type {
-    margin-bottom: -525px;
-  }
-}
 
 #guidelines .container {
   margin-top: 6rem;
@@ -502,48 +370,6 @@ nav a {
   height: 6rem;
   z-index: -1;
   transition: background-size 0.3s ease-in-out;
-}
-@media (max-width: 550px) {
-  #guidelines * {
-    display: block;
-    text-align: center;
-    font-size: smaller;
-  }
-  #guidelines * * {
-    max-width: 100%;
-  }
-  #guidelines * h1 {
-    font-size: 8rem;
-    margin-top: 6rem;
-    margin-bottom: 18rem;
-  }
-  #guidelines * h2 {
-    font-size: 2.5rem;
-  }
-  #guidelines * p, #guidelines * a {
-    font-size: 1.5rem;
-  }
-  #guidelines *::after {
-    content: "";
-    background-image: url("../images/ink-sketches-02.svg");
-    background-size: cover;
-    z-index: -1;
-  }
-}
-@media (max-width: 550px) {
-  #guidelines {
-    margin-top: 670px;
-  }
-  #guidelines * {
-    font-size: 125%;
-  }
-  #guidelines a {
-    font-size: 100%;
-    margin: auto -1px;
-  }
-  #guidelines a:after {
-    max-width: 100%;
-  }
 }
 
 #contribute {
@@ -621,72 +447,6 @@ nav a {
   border-radius: 1rem;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 550px) {
-  #contribute {
-    display: block;
-    text-align: center;
-    font-size: smaller;
-  }
-  #contribute * {
-    max-width: 100%;
-  }
-  #contribute h1 {
-    font-size: 8rem;
-    margin-top: 6rem;
-    margin-bottom: 18rem;
-  }
-  #contribute h2 {
-    font-size: 2.5rem;
-  }
-  #contribute p, #contribute a {
-    font-size: 1.5rem;
-  }
-  #contribute::after {
-    content: "";
-    background-image: url("../images/ink-sketches-02.svg");
-    background-size: cover;
-    z-index: -1;
-  }
-}
-@media (max-width: 550px) {
-  #contribute > :first-child {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 0px 0px;
-  }
-  #contribute h2 {
-    grid-area: 1/1/1/1;
-  }
-  #contribute .container p:nth-child(2) {
-    grid-area: 2/1/3/1;
-  }
-  #contribute .container p:nth-child(3) {
-    grid-area: 3/1/4/1;
-  }
-  #contribute h2:before {
-    max-width: 100%;
-    margin-left: -15px;
-  }
-  #contribute a {
-    font-size: 100%;
-  }
-  #contribute footer {
-    padding: 1rem;
-  }
-  #contribute footer .container a {
-    padding: 2rem 0.2rem;
-    border-radius: 1rem;
-    font-size: 1.4em;
-    margin: 10px;
-  }
-}
-@media (max-width: 550px) and (max-width: 375px) {
-  #contribute footer .container a {
-    font-size: 1.3em;
-    margin: 8px;
-  }
-}
 
 #styles {
   margin-top: 6rem;
@@ -724,17 +484,6 @@ nav a {
   width: 25rem;
   height: 6rem;
   z-index: -1;
-}
-@media (max-width: 550px) {
-  #styles ul {
-    display: block;
-    padding-left: 0px;
-  }
-  #styles .container > a {
-    margin: 2px;
-    padding-bottom: 24px;
-    padding-left: 24px;
-  }
 }
 
 .profile {
@@ -777,13 +526,6 @@ nav a {
   background-position: right;
   z-index: -1;
 }
-@media (max-width: 550px) {
-  .profile .container > a {
-    margin: 2px;
-    padding-bottom: 24px;
-    padding-left: 24px;
-  }
-}
 
 .page-footer {
   margin-top: 10rem;
@@ -820,47 +562,6 @@ nav a {
   text-decoration: none;
   color: #ffffff;
   border-bottom: solid 4px #89192F;
-}
-@media (max-width: 550px) {
-  .page-footer {
-    display: block;
-    text-align: center;
-    font-size: smaller;
-  }
-  .page-footer * {
-    max-width: 100%;
-  }
-  .page-footer h1 {
-    font-size: 8rem;
-    margin-top: 6rem;
-    margin-bottom: 18rem;
-  }
-  .page-footer h2 {
-    font-size: 2.5rem;
-  }
-  .page-footer p, .page-footer a {
-    font-size: 1.5rem;
-  }
-  .page-footer::after {
-    content: "";
-    background-image: url("../images/ink-sketches-02.svg");
-    background-size: cover;
-    z-index: -1;
-  }
-}
-@media (max-width: 5550px) {
-  .page-footer {
-    margin-top: 5rem;
-  }
-  .page-footer ul {
-    display: block;
-    padding-left: 0px;
-  }
-  .page-footer li {
-    height: 7rem;
-    line-height: 7rem;
-    text-align: center;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
