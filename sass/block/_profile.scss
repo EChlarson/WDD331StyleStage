@@ -22,9 +22,12 @@
       display: block;
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       width: 25rem;
       height: 6rem;
       z-index: -1;
+      transition: background-size 0.3s ease-in-out;
+
    }//CENTER BUTTON TEXT BETTER
 
    //background image 

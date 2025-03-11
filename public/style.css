@@ -172,6 +172,7 @@ header div p::after {
   animation-delay: 2.5s;
 }
 
+
 @media (max-width: 550px) {
   body {
     margin-left: 0px;
@@ -179,6 +180,25 @@ header div p::after {
     max-width: 100%;
   }
 }
+
+::-webkit-scrollbar-thumb {
+  background: #89192F;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #110F1A;
+}
+
+.link-github:hover::after,
+.link-guidelines:hover::after,
+.profile a:last-of-type:hover::after,
+.link-allstyles:hover::after {
+  transform: translate(-50%, -50%) sale(1.1);
+}
+
+
 header {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -211,7 +231,9 @@ header .link-github {
   background-image: url(../../images/ink-sketches-08.svg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
+  transition: background-size 0.3s ease-in-out;
 }
 header .link-github svg path {
   fill: #ffffff;
@@ -256,7 +278,7 @@ nav {
   background-image: url(../../images/ink-sketches-09.svg);
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  z-index: 10000;
 }
 nav ul {
   display: flex;
@@ -473,11 +495,13 @@ nav a {
   background-image: url(../../images/ink-sketches-07.svg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: block;
   margin-top: 2rem;
   width: 25rem;
   height: 6rem;
   z-index: -1;
+  transition: background-size 0.3s ease-in-out;
 }
 @media (max-width: 550px) {
   #guidelines * {
@@ -735,9 +759,11 @@ nav a {
   display: block;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   width: 25rem;
   height: 6rem;
   z-index: -1;
+  transition: background-size 0.3s ease-in-out;
 }
 .profile::after {
   content: "";
