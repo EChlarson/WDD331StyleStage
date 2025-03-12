@@ -127,7 +127,8 @@ header div p::after {
     opacity: 1;
   }
   100% {
-    transform: translateY(100vh) rotate(360deg); /* Moves flower to bottom */
+    transform: translateY(100vh) rotate(360deg);
+    /* Moves flower to bottom */
     opacity: 0;
   }
 }
@@ -138,7 +139,8 @@ header div h2::before,
 header div h2::after,
 header div p::before,
 header div p::after {
-  animation: fall 6s linear infinite; /* Duration: 6s, Infinite loop */
+  animation: fall 6s linear infinite;
+  /* Duration: 6s, Infinite loop */
 }
 
 /* Add variations so flowers fall at different speeds */
@@ -238,7 +240,7 @@ header .link-github svg path {
 nav {
   margin: 8rem 0 3rem 0;
   padding: 8rem 8rem;
-  background-image: url(../../images/ink-sketches-09.svg);
+  background-image: url(/images/ink-sketches-09.svg);
   background-size: cover;
   background-position: center;
   z-index: 10000;
@@ -304,7 +306,7 @@ nav a {
   padding: 10rem 20rem;
   color: #ffffff;
   list-style: none;
-  background-image: url(../../images/ink-sketches-10.svg);
+  background-image: url(./images/ink-sketches-10.svg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -563,5 +565,3 @@ nav a {
   color: #ffffff;
   border-bottom: solid 4px #89192F;
 }
-
-/*# sourceMappingURL=style.css.map */
