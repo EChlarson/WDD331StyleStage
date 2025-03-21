@@ -1,3 +1,12 @@
+body {
+   max-width: 2000px;
+   
+   //align body to center when screen is larger than 2000px
+   @media (min-width: 2000px) {
+      margin: 0 auto;
+      }
+}
+
 @mixin two-grid-left {
    display: grid;
    grid-template-columns: 2fr 1fr;
@@ -22,29 +31,25 @@
          max-width: 100%;
          
       }
-
-
       display: block;
 
-
       text-align: center;
-      font-size: smaller;
-
+      font-size: normal;
 
       h1 {
-         font-size: 8rem;
+         font-size: 9rem;
          margin-top: 6rem;
          margin-bottom: 18rem;
       }
 
 
       h2 {
-         font-size: 2.5rem;
+         font-size: 3rem;
       }
 
 
       p, a {
-         font-size: 1.5rem;
+         font-size: 1.8rem;
       }
 
 

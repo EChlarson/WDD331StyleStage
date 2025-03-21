@@ -19,26 +19,26 @@
 
 //Base Font Stylings
 h1 {
-   @include heading-font(180px);
+   @include heading-font(160px);
    margin: 1rem;
 }
 
 h2 {
-   @include heading-font(60px);
+   @include heading-font(50px);
    margin: 1rem;
 }
 
 h3, h4 {
-   @include heading-font(45px);
+   @include heading-font(35px);
    margin: 1rem;
 }
 
 p, li, a{
-   @include paragraph-font(35px);
+   @include paragraph-font(25px);
    margin: 1rem;
 }
 
 blockquote p {
-   @include heading-font(35px);
+   @include heading-font(25px);
    margin: 1rem;
 }
