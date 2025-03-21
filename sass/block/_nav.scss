@@ -12,6 +12,11 @@ nav {
    justify-content: space-between;
    align-items: center;
    list-style: none;
+   padding-left: 0px;
+   }
+
+   li {
+      margin: .5rem;
    }
 
    a {
@@ -22,7 +27,8 @@ nav {
    @include small-screen;
 
 
-   @media (max-width: 768px) {
+   @media (max-width: 1000px) {
+      
       ul {
          padding-left: 0px;
          display: block;
