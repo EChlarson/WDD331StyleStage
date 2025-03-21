@@ -97,4 +97,63 @@
 
    }
 
+   @include small-screen;
+
+
+   @media (max-width: 550px) {
+      //updated first container grid for small screen
+      & > :first-child {
+         display: grid;
+         grid-template-columns: 2fr 1fr;
+         grid-template-rows: auto auto auto;
+         gap: 0px 0px;
+      }
+   
+      h2 {
+         grid-area: 1/1/1/1;
+      }
+   
+      .container p:nth-child(2) {
+         grid-area: 2/1/3/1;
+      }
+   
+      .container p:nth-child(3) {
+         grid-area: 3/1/4/1;
+      }
+
+
+      //update images and a font size for small screen
+      h2:before {
+         max-width: 100%;
+         margin-left: -15px;
+      }
+
+
+      a {
+         font-size: 100%;
+      }
+
+
+      //update footer for small screen
+      footer {
+         .container a {
+            padding: 2rem .2rem;
+            border-radius: 1rem;
+            font-size: 1.4em;
+            margin: 10px;
+
+
+            @media (max-width: 375px) {
+               font-size: 1.3em;
+               margin: 8px;
+            }
+         }
+
+
+         padding: 1rem;
+
+
+      }
+     
+   }
 }

@@ -9,3 +9,59 @@
 .link-allstyles:hover::after{
    transform: translate(-50%, -50%) sale(1.1);
 }
+
+@mixin one-grid-left {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+
+
+@mixin small-screen {
+   @media (max-width: 550px) {
+      * {
+         max-width: 100%;
+         
+      }
+
+
+      display: block;
+
+
+      text-align: center;
+      font-size: smaller;
+
+
+      h1 {
+         font-size: 8rem;
+         margin-top: 6rem;
+         margin-bottom: 18rem;
+      }
+
+
+      h2 {
+         font-size: 2.5rem;
+      }
+
+
+      p, a {
+         font-size: 1.5rem;
+      }
+
+
+      &::after {
+         content: "";
+         background-image: url("../images/ink-sketches-02.svg");
+         background-size: cover;
+         z-index: -1;
+      }
+   }
+}
+
+
+@media (max-width: 550px) {
+   body {
+      margin-left: 0px;
+      margin-right: 0px;
+      max-width: 100%;
+   }
+}
