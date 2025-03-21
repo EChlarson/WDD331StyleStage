@@ -8,8 +8,9 @@
    ul {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 30px 30px;
+      gap: 30px 20px;
       list-style: none;
+      padding-left: 0px;
    }
 
    li {

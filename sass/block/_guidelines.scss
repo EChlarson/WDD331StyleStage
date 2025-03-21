@@ -5,13 +5,13 @@
    }
 
    & a {
+      justify-self: center;
       @include paragraph-font(25px);
       border-bottom: solid 4px $color-primary-alt;
       color: $color-primary;
       text-decoration: none;
       margin: auto -1px; //removed the extra gap between the p and a text
-
-      
+      text-align: center;   
    }
 
    h3 {

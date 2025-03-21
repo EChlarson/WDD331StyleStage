@@ -570,6 +570,7 @@ nav a {
   margin-top: 6rem;
 }
 #guidelines a {
+  justify-self: center;
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -578,6 +579,7 @@ nav a {
   color: #110F1A;
   text-decoration: none;
   margin: auto -1px;
+  text-align: center;
 }
 #guidelines h3 {
   margin-top: 4rem;
@@ -693,7 +695,7 @@ nav a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 0px 0px;
+  gap: 0px 10px;
   grid-template-areas: "h3 h3 h3" "a1 a2 a3";
 }
 #contribute footer h3 {
@@ -791,8 +793,9 @@ nav a {
 #styles ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px 30px;
+  gap: 30px 20px;
   list-style: none;
+  padding-left: 0px;
 }
 #styles li {
   text-decoration: none;
