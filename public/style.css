@@ -417,6 +417,7 @@ nav a {
 #about a {
   color: #110F1A;
   text-decoration: none;
+  margin: auto -1px;
 }
 #about blockquote {
   color: #89192F;
@@ -427,7 +428,7 @@ nav a {
   font-family: "Yeon Sung", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 35px;
+  font-size: 25px;
   color: #89192F;
   border-bottom: solid 4px #89192F;
 }
@@ -445,10 +446,6 @@ nav a {
   z-index: -1;
 }
 #about a {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 35px;
   border-bottom: solid 4px #89192F;
 }
 #about h2::before {
@@ -576,10 +573,11 @@ nav a {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 35px;
+  font-size: 25px;
   border-bottom: solid 4px #89192F;
   color: #110F1A;
   text-decoration: none;
+  margin: auto -1px;
 }
 #guidelines h3 {
   margin-top: 4rem;
@@ -634,7 +632,6 @@ nav a {
     font-size: 125%;
   }
   #guidelines a {
-    font-size: 100%;
     margin: auto -1px;
   }
   #guidelines a:after {
@@ -649,6 +646,7 @@ nav a {
   text-decoration: none;
   color: #110F1A;
   border-bottom: solid 4px #89192F;
+  margin: auto -1px;
 }
 #contribute > :first-child {
   display: grid;
@@ -806,6 +804,7 @@ nav a {
 }
 #styles li a {
   color: #ffffff;
+  margin: auto -1px;
 }
 #styles .container > a {
   text-align: center;
@@ -845,6 +844,7 @@ nav a {
   text-decoration: none;
   color: #110F1A;
   border-bottom: solid 4px #89192F;
+  margin: auto -1px;
 }
 .profile .container > a {
   text-align: center;
@@ -916,6 +916,7 @@ nav a {
   text-decoration: none;
   color: #ffffff;
   border-bottom: solid 4px #89192F;
+  margin: auto -1px;
 }
 @media (max-width: 550px) {
   .page-footer {

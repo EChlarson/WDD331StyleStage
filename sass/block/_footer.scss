@@ -34,6 +34,8 @@
       text-decoration: none;
       color: $color-secondary;
       border-bottom: solid 4px $color-primary-alt;
+      margin: auto -1px; //removed the extra gap between the p and a text
+
    }
 
    //background image

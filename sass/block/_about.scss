@@ -42,6 +42,8 @@
    a {
       color: $color-primary;
       text-decoration: none;
+      margin: auto -1px; //removed the extra gap between the p and a text
+
    }
 
    blockquote {
@@ -50,7 +52,7 @@
       grid-area: blockquote;
 
       & a {
-         @include heading-font(35px);
+         @include heading-font(25px);
          color: $color-primary-alt;
          border-bottom: solid 4px $color-primary-alt;
       }
@@ -73,7 +75,7 @@
    }
 
    & a {
-      @include paragraph-font(35px);
+
       border-bottom: solid 4px $color-primary-alt;
    }
 
