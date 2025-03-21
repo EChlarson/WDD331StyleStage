@@ -127,7 +127,8 @@ header div p::after {
     opacity: 1;
   }
   100% {
-    transform: translateY(100vh) rotate(360deg); /* Moves flower to bottom */
+    transform: translateY(100vh) rotate(360deg);
+    /* Moves flower to bottom */
     opacity: 0;
   }
 }
@@ -138,7 +139,8 @@ header div h2::before,
 header div h2::after,
 header div p::before,
 header div p::after {
-  animation: fall 6s linear infinite; /* Duration: 6s, Infinite loop */
+  animation: fall 6s linear infinite;
+  /* Duration: 6s, Infinite loop */
 }
 
 /* Add variations so flowers fall at different speeds */
@@ -563,5 +565,3 @@ nav a {
   color: #ffffff;
   border-bottom: solid 4px #89192F;
 }
-
-/*# sourceMappingURL=style.css.map */
