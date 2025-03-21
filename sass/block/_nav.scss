@@ -30,7 +30,10 @@ nav {
    @media (max-width: 1000px) {
       
       ul {
+         margin-top: 0px;
+         margin-bottom: 32px;
          padding-left: 0px;
+         padding-bottom: 40px;
          display: block;
          text-align: center;
       }

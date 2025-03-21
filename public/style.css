@@ -185,9 +185,10 @@ header div p::after {
 }
 
 body {
-  max-width: 2000px;
+  max-width: 1800px;
+  margin: 0px;
 }
-@media (min-width: 2000px) {
+@media (min-width: 1800px) {
   body {
     margin: 0 auto;
   }
@@ -311,6 +312,9 @@ header .link-github svg path {
   }
 }
 @media (max-width: 550px) {
+  header {
+    min-height: 1400px;
+  }
   header h1 {
     margin: 20px;
   }
@@ -335,6 +339,10 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  padding-left: 0px;
+}
+nav li {
+  margin: 0.5rem;
 }
 nav a {
   color: #ffffff;
@@ -367,9 +375,12 @@ nav a {
     z-index: -1;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   nav ul {
+    margin-top: 0px;
+    margin-bottom: 32px;
     padding-left: 0px;
+    padding-bottom: 40px;
     display: block;
     text-align: center;
   }
@@ -397,6 +408,9 @@ nav a {
 #about .container p:last-child {
   grid-area: p3;
 }
+#about .container:first-of-type > p:last-of-type {
+  margin: 75px 0px;
+}
 #about .container {
   margin-top: 6rem;
 }
@@ -422,7 +436,7 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10rem 20rem;
+  padding: 10rem 10rem;
   color: #ffffff;
   list-style: none;
   background-image: url(./images/ink-sketches-10.svg);
@@ -452,14 +466,46 @@ nav a {
 #about p:last-child::after {
   content: "";
   position: absolute;
-  top: 53rem;
-  right: -3rem;
+  top: 43rem;
+  right: -10rem;
   width: 50rem;
   height: 40rem;
   background-image: url("../images/ink-sketches-03.svg");
   background-size: cover;
   background-position: right;
   z-index: -1;
+}
+@media (max-width: 1360px) {
+  #about h2::before {
+    top: 13.5%;
+  }
+  #about blockquote {
+    margin-top: 38rem;
+  }
+  #about p:last-child::after {
+    top: 38%;
+    right: -12rem;
+  }
+  #about .container:first-of-type > p:last-of-type {
+    margin: 200px 0px 200px 20px;
+    width: 80%;
+  }
+}
+@media (max-width: 900px) {
+  #about p:last-child::after {
+    top: 33%;
+    right: -13rem;
+  }
+  #about .container:first-of-type > p:last-of-type {
+    margin: 50px 0px 50px 20px;
+    width: 60%;
+  }
+}
+@media (max-width: 625px) {
+  #about p:last-child::after {
+    top: 35%;
+    right: -16rem;
+  }
 }
 @media (max-width: 550px) {
   #about * {
