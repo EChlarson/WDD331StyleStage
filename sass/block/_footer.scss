@@ -1,7 +1,11 @@
 .page-footer {
-   margin-top: 10rem;
    padding: 4rem 1rem;
    text-align: center;
+   height: 48rem;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
 
    p {
       color: $color-secondary;
@@ -41,14 +45,15 @@
    //background image
    background-image: url(../../images/ink-sketches-06.svg);
    background-size: cover;
-   background-position: center;
+   background-position: top;
    z-index: -1;
 
    @include small-screen;
 
 
-   @media (max-width: 5550px) {
-      margin-top: 5rem;
+   @media (max-width: 550px) {
+      margin-top: 2rem;
+      height: 76rem;
 
 
       ul {

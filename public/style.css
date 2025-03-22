@@ -475,7 +475,7 @@ nav a {
 }
 @media (max-width: 1360px) {
   #about h2::before {
-    top: 13%;
+    top: 12.25%;
   }
   #about blockquote {
     margin-top: 38rem;
@@ -885,7 +885,7 @@ nav a {
   z-index: -1;
   transition: background-size 0.3s ease-in-out;
 }
-@media (max-width: 890px) {
+@media (max-width: 1050px) {
   .profile .container > a {
     margin-top: 125px;
   }
@@ -940,12 +940,15 @@ nav a {
 }
 
 .page-footer {
-  margin-top: 10rem;
   padding: 4rem 1rem;
   text-align: center;
+  height: 48rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-image: url(../../images/ink-sketches-06.svg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   z-index: -1;
 }
 .page-footer p {
@@ -1003,9 +1006,10 @@ nav a {
     z-index: -1;
   }
 }
-@media (max-width: 5550px) {
+@media (max-width: 550px) {
   .page-footer {
-    margin-top: 5rem;
+    margin-top: 2rem;
+    height: 76rem;
   }
   .page-footer ul {
     display: block;
