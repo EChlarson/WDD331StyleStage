@@ -31,7 +31,7 @@
    }
 
    & .container:first-of-type > p:last-of-type {
-      margin: 75px 0px;
+      margin: 115px 0px;
    }
 
    .container {
@@ -100,7 +100,7 @@
    & p:last-child::after {
       content: "";
       position: absolute;
-      top: 43rem;
+      top: 41rem;
       right: -10rem;
       width: 50rem;
       height: 40rem;
@@ -132,7 +132,7 @@
 
    @media (max-width: 900px)  {
       & p:last-child::after {
-         top: 33%;
+         top: 36%;
          right: -13rem;
       }
 
@@ -144,7 +144,7 @@
 
    @media (max-width: 625px) {
       & p:last-child::after {
-         top: 35%;
+         top: 38%;
          right: -16rem;
       }
    }
