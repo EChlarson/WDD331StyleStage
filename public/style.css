@@ -187,6 +187,7 @@ header div p::after {
 body {
   max-width: 1800px;
   margin: 0px;
+  overflow-x: hidden;
 }
 @media (min-width: 1800px) {
   body {
@@ -867,10 +868,13 @@ nav a {
   margin: auto -1px;
 }
 .profile .container > a {
+  display: block;
+  margin: 0 auto;
+  margin-top: 240px;
   text-align: center;
   border: none;
   color: #ffffff;
-  padding: 3rem;
+  padding: 5rem 2rem 1rem 2rem;
   background-image: url(../../images/ink-sketches-08.svg);
   display: block;
   background-size: cover;
@@ -881,17 +885,51 @@ nav a {
   z-index: -1;
   transition: background-size 0.3s ease-in-out;
 }
+@media (max-width: 890px) {
+  .profile .container > a {
+    margin-top: 125px;
+  }
+}
 .profile::after {
   content: "";
   position: absolute;
   top: -10rem;
-  right: 1rem;
+  right: 0rem;
   width: 60rem;
   height: 50rem;
   background-image: url("../images/ink-sketches-05.svg");
   background-size: cover;
   background-position: right;
   z-index: -1;
+}
+@media (max-width: 1310px) {
+  .profile::after {
+    width: 48rem;
+    height: 40rem;
+  }
+}
+@media (max-width: 1050px) {
+  .profile::after {
+    width: 36rem;
+    height: 30rem;
+    top: -8rem;
+  }
+}
+@media (max-width: 890px) {
+  .profile::after {
+    width: 30rem;
+    height: 25rem;
+    top: -5rem;
+    right: -4rem;
+  }
+}
+@media (max-width: 690px) {
+  .profile::after {
+    width: 21rem;
+    height: 18.5rem;
+    top: -4rem;
+    right: -5rem;
+  }
 }
 @media (max-width: 550px) {
   .profile .container > a {

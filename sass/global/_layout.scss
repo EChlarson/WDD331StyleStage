@@ -1,6 +1,7 @@
 body {
    max-width: 1800px;
    margin: 0px;
+   overflow-x: hidden;
    
    //align body to center when screen is larger than 2000px
    @media (min-width: 1800px) {
