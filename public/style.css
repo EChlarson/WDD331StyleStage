@@ -441,7 +441,7 @@ nav a {
   padding: 10rem 10rem;
   color: #ffffff;
   list-style: none;
-  background-image: url(../public/images/ink-sketches-10.svg);
+  background-image: url(/public/images/ink-sketches-10.svg);
   background-size: cover;
   background-position: center;
   z-index: -1;
