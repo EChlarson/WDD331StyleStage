@@ -11,12 +11,12 @@ $brand-colors: (
 
 //Cursor
 * {
-  cursor: url("../../images/ink-cursor-11.svg"), auto;
+  cursor: url("../../public/images/ink-cursor-11.svg"), auto;
 }
 
 a,
 .page-footer ul li a {
-  cursor: url("../../images/ink-cursor-12.svg"), auto;
+  cursor: url("../../public/images/ink-cursor-12.svg"), auto;
 }
 
 .link-github,
@@ -25,7 +25,7 @@ nav li a,
 .profile a:last-of-type,
 .link-allstyles,
 .page-footer p a {
-  cursor: url("../../images/ink-cursor-13.svg"), auto;
+  cursor: url("../../public/images/ink-cursor-13.svg"), auto;
 }
 
 //Cascading Background
@@ -36,7 +36,7 @@ header {
 
 header div h1::before {
   position: absolute;
-  content: url(../../images/flower-01.svg);
+  content: url(../../public/images/flower-01.svg);
   width: 30rem;
   height: auto;
   top: 0;
@@ -46,7 +46,7 @@ header div h1::before {
 
 header div h1::after {
   position: absolute;
-  content: url(../../images/flower-02.svg);
+  content: url(../../public/images/flower-02.svg);
   width: 30rem;
   height: auto;
   top: -10rem;
@@ -56,7 +56,7 @@ header div h1::after {
 
 header div h2::before {
   position: absolute;
-  content: url(../../images/flower-03.svg);
+  content: url(../../public/images/flower-03.svg);
   width: 30rem;
   height: auto;
   top: 3rem;
@@ -66,7 +66,7 @@ header div h2::before {
 
 header div h2::after {
   position: absolute;
-  content: url(../../images/flower-04.svg);
+  content: url(../../public/images/flower-04.svg);
   width: 30rem;
   height: auto;
   top: -3rem;
@@ -76,7 +76,7 @@ header div h2::after {
 
 header div p::before {
   position: absolute;
-  content: url(../../images/flower-01.svg);
+  content: url(../../public/images/flower-01.svg);
   width: 30rem;
   height: auto;
   top: 14rem;
@@ -86,7 +86,7 @@ header div p::before {
 
 header div p::after {
   position: absolute;
-  content: url(../../images/flower-01.svg);
+  content: url(../../public/images/flower-01.svg);
   width: 30rem;
   height: auto;
   top: -10rem;
