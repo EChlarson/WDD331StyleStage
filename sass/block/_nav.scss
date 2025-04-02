@@ -38,6 +38,14 @@ nav {
          text-align: center;
       }
    }
+
+   @media (max-width: 1250px) {
+      margin-top: 60rem;
+   }
+
+   @media (max-width: 830px) {
+      margin-top: 48rem;
+   }
 }
 
 //ADD ANIMATION AND HOVER EFFECTS!F

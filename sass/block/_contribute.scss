@@ -120,6 +120,14 @@
       }
    }
 
+   @media (max-width: 600px) {
+      footer {
+         .container a {
+         display: block;
+         }
+      }      
+   }
+
 
    @media (max-width: 550px) {
       //updated first container grid for small screen
@@ -161,12 +169,12 @@
             padding: 2rem .2rem;
             border-radius: 1rem;
             font-size: 1.4em;
-            margin: 10px;
+            margin: 10px 0px;
 
 
             @media (max-width: 375px) {
                font-size: 1.3em;
-               margin: 8px;
+               margin: 8px -1px;
             }
          }
 

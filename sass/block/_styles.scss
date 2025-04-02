@@ -8,7 +8,7 @@
    ul {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 30px 20px;
+      gap: 30px 5px;
       list-style: none;
       padding-left: 0px;
    }
@@ -19,7 +19,7 @@
       color: $color-secondary;
       background-color: $color-primary-alt;
       border-radius: 1rem;
-      padding: 4rem 1rem;
+      padding: 4rem .75rem;
 
       a{
          color: $color-secondary;
@@ -42,7 +42,7 @@
       z-index: -1;
    }
 
-   @media (max-width: 550px) {
+   @media (max-width: 600px) {
       ul {
          display: block;
          padding-left: 0px;

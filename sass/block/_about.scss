@@ -88,9 +88,10 @@
       top: 7rem;
       left: 0;
       width: 50rem;
-      height: 40rem;
+      height: 35rem;
       background-image: url(https://echlarson.github.io/WDD331StyleStage/images/ink-sketches-01.svg);
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
       background-position: left;
       z-index: -1;
 
@@ -105,7 +106,8 @@
       width: 50rem;
       height: 40rem;
       background-image: url(https://echlarson.github.io/WDD331StyleStage/images/ink-sketches-03.svg);
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
       background-position: right;
       z-index: -1;
    }
@@ -161,8 +163,12 @@
 
       //position background images between text
       & h2::before {
-         top: 28rem;
          max-width: 100%;
+         margin-top: 5.5rem;
+
+         @media (max-width: 340px) {
+            margin-top: 13rem;
+         }
       }
 
 
@@ -172,16 +178,46 @@
 
 
       & p:last-child::after {
-         top: 95rem;
+         width: 42.5rem;
+         height: 34rem;
+         top: 48%;
+         left: 42%;
+         transform: translateX(-50%);
+
+         @media (max-width: 430px) {
+            top: 50.5%;
+         }
+
+         @media (max-width: 362px) {
+            top: 53%;
+         }
+
+         @media (max-width: 300px) {
+            top: 55.25%;
+         }
+
+         @media (max-width: 255px) {
+            top: 57%;
+         }
       }
 
 
       //align p element to right of art piece
       & .container:first-of-type p:nth-child(5) {
          margin-top: -45px;
-         max-width: 45%;
-         justify-self: right;
+         width: 100%;
+         justify-self: center;
       }
+
+      & .container:first-of-type > p:last-of-type {
+         margin-right: 25px;
+         width: 90%;
+      }
+      & .container:nth-of-type(2) {
+         h2 {
+            margin-top: 40rem;
+         }
+      }       
 
 
       //correct margin of last two p elements
@@ -192,6 +228,7 @@
 
       & .container:last-of-type p:last-of-type {
          margin-top: 45px;
+
       }
 
 
