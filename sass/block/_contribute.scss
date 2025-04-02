@@ -132,10 +132,7 @@
    @media (max-width: 550px) {
       //updated first container grid for small screen
       & > :first-child {
-         display: grid;
-         grid-template-columns: 2fr 1fr;
-         grid-template-rows: auto auto auto;
-         gap: 0px 0px;
+         display: block;
       }
    
       h2 {
@@ -153,8 +150,33 @@
 
       //update images and a font size for small screen
       h2:before {
-         max-width: 100%;
-         margin-left: -15px;
+         left: 50%; /* Horizontally center the background image */
+         transform: translateX(-50%);
+         background-size: contain;
+         background-repeat: no-repeat;
+         top: 470px;
+
+         @media (max-width: 410px) {
+            top: 600px;            
+         }
+
+         @media (max-width: 335px) {
+            top: 755px;
+            width: 27rem;
+            height: 27rem;
+         }
+
+         @media (max-width: 278px) {
+            top: 975px;
+         }
+
+         @media (max-width: 230px) {
+            top: 1158px;
+         }
+      }
+
+      .container:nth-of-type(2) {
+         margin-top: 495px;
       }
 
 

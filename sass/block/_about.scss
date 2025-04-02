@@ -85,7 +85,7 @@
    & h2::before {
       content: "";
       position: absolute;
-      top: 7rem;
+      top: 6rem;
       left: 0;
       width: 50rem;
       height: 35rem;
@@ -164,7 +164,7 @@
       //position background images between text
       & h2::before {
          max-width: 100%;
-         margin-top: 5.5rem;
+         margin-top: 4rem;
 
          @media (max-width: 340px) {
             margin-top: 13rem;
@@ -173,7 +173,7 @@
 
 
       blockquote {
-         margin-top: 400px;
+         margin-top: 410px;
       }
 
 

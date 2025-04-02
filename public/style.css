@@ -456,7 +456,7 @@ nav a {
 #about h2::before {
   content: "";
   position: absolute;
-  top: 7rem;
+  top: 6rem;
   left: 0;
   width: 50rem;
   height: 35rem;
@@ -544,7 +544,7 @@ nav a {
   }
   #about h2::before {
     max-width: 100%;
-    margin-top: 5.5rem;
+    margin-top: 4rem;
   }
 }
 @media (max-width: 550px) and (max-width: 340px) {
@@ -554,7 +554,7 @@ nav a {
 }
 @media (max-width: 550px) {
   #about blockquote {
-    margin-top: 400px;
+    margin-top: 410px;
   }
 }
 @media (max-width: 550px) {
@@ -829,10 +829,7 @@ nav a {
 }
 @media (max-width: 550px) {
   #contribute > :first-child {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 0px 0px;
+    display: block;
   }
   #contribute h2 {
     grid-area: 1/1/1/1;
@@ -844,12 +841,47 @@ nav a {
     grid-area: 3/1/4/1;
   }
   #contribute h2:before {
-    max-width: 100%;
-    margin-left: -15px;
+    left: 50%;
+    /* Horizontally center the background image */
+    transform: translateX(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 470px;
   }
+}
+@media (max-width: 550px) and (max-width: 410px) {
+  #contribute h2:before {
+    top: 600px;
+  }
+}
+@media (max-width: 550px) and (max-width: 335px) {
+  #contribute h2:before {
+    top: 755px;
+    width: 27rem;
+    height: 27rem;
+  }
+}
+@media (max-width: 550px) and (max-width: 278px) {
+  #contribute h2:before {
+    top: 975px;
+  }
+}
+@media (max-width: 550px) and (max-width: 230px) {
+  #contribute h2:before {
+    top: 1158px;
+  }
+}
+@media (max-width: 550px) {
+  #contribute .container:nth-of-type(2) {
+    margin-top: 495px;
+  }
+}
+@media (max-width: 550px) {
   #contribute a {
     font-size: 100%;
   }
+}
+@media (max-width: 550px) {
   #contribute footer {
     padding: 1rem;
   }
