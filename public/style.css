@@ -211,7 +211,7 @@ body {
 }
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 9fr 10fr;
   color: #110F1A;
   position: relative;
   /* Ensure positioning context for ::after */
@@ -319,6 +319,11 @@ header .link-github svg path {
   header h1 {
     margin: 20px;
   }
+}
+header::after {
+  width: 32rem;
+  height: 28rem;
+  left: 51%;
 }
 
 .skip-link {
