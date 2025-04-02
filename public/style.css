@@ -990,17 +990,23 @@ nav a {
 }
 @media (max-width: 690px) {
   .profile::after {
-    width: 21rem;
-    height: 18.5rem;
-    top: -4rem;
-    right: -5rem;
+    width: 85%;
+    height: 85%;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .profile .container a {
+    margin-top: 470px;
   }
 }
 @media (max-width: 550px) {
   .profile .container > a {
-    margin: 2px;
     padding-bottom: 24px;
     padding-left: 24px;
+    margin-top: 400px;
   }
 }
 
