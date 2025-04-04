@@ -186,6 +186,7 @@ header div p::after {
 
 body {
   max-width: 1800px;
+  min-width: 450px;
   margin: 0px;
   overflow-x: hidden;
 }
@@ -1043,7 +1044,7 @@ nav a {
 }
 
 .page-footer {
-  padding: 4rem 1rem;
+  padding: 8rem 1rem 2rem 1rem;
   text-align: center;
   height: 48rem;
   display: flex;
@@ -1108,6 +1109,15 @@ nav a {
     background-image: url(https://echlarson.github.io/WDD331StyleStage/images/ink-sketches-02.svg);
     background-size: cover;
     z-index: -1;
+  }
+}
+@media (max-width: 550px) {
+  .page-footer {
+    padding: 8rem 1rem 0rem 1rem;
+  }
+  .page-footer p:first-of-type, .page-footer p:first-of-type a:first-of-type {
+    color: #89192F;
+    text-shadow: 0px 0px 1px white;
   }
 }
 @media (max-width: 600px) {
